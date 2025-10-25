@@ -1,0 +1,31 @@
+###
+GET http://localhost:3030/ping
+
+###
+GET http://localhost:3030/books/
+
+###
+GET http://localhost:3030/books/1
+
+
+###
+POST  http://localhost:3030/books/
+Content-Type: application/json
+
+{
+    "title":"libro2",
+    "author":"autor2",
+    "year":2025
+} 
+
+###
+PUT http://localhost:3030/books/1
+
+{
+    "title":"libro11",
+    "author":"autor1",
+    "year":2026
+}
+
+###
+DELETE http://localhost:3030/books/5
